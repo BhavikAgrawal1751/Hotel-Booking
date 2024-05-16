@@ -76,7 +76,7 @@ if(isset($_GET['id'])){
 
 ?>
 
-    <div class="hero-wrap js-fullheight" style="background-image: url('<?php echo APPURL;?>/images/<?php echo $singleRoom->image;?>');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap js-fullheight" style="background-image: url('<?php echo ROOMSIMAGES;?>/<?php echo $singleRoom->image;?>');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
@@ -131,12 +131,15 @@ if(isset($_GET['id'])){
 							</div>
 							
 						
-						
+						<?php if(isset($_SESSION['username'])) : ?>
 							<div class="col-md-12">
 								<div class="form-group">
 									<input type="submit" name="submit" value="Book and Pay Now" class="btn btn-primary py-3 px-4">
 								</div>
 							</div>
+						<?php else : ?>	
+							<p> Login in order to book a room</p>
+						<?php endif; ?>
 						</div>
 				</form>
 	    		</div>

@@ -1,7 +1,8 @@
 <?php
     session_start();
-	
 	define("APPURL","http://localhost/hotel-booking");
+	define("HOTELSIMAGES","http://localhost/hotel-booking/admin-panel/hotels-admins/hotel_images");
+	define("ROOMSIMAGES","http://localhost/hotel-booking/admin-panel/rooms-admins/room_images");
 ?>
 <!DOCTYPE html>
 <html lang="en">

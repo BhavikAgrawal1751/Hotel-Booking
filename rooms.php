@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Rooms <i class="fa fa-chevron-right"></i></span></p>
+          	<p class="breadcrumbs mb-2"><span class="mr-2"><a href="<?php  ?>">Home <i class="fa fa-chevron-right"></i></a></span> <span>Rooms <i class="fa fa-chevron-right"></i></span></p>
             <h1 class="mb-0 bread">Apartment Room</h1>
           </div>
         </div>
@@ -34,7 +34,7 @@
 					<?php foreach($getAllRooms as $room) : ?>
     			<div class="col-lg-6">
     				<div class="room-wrap d-md-flex">
-    					<a href="#" class="img" style="background-image: url(images/<?php echo $room->image; ?>);"></a>
+    					<a href="#" class="img" style="background-image: url(<?php echo ROOMSIMAGES; ?>/<?php echo $room->image; ?>);"></a>
     					<div class="half left-arrow d-flex align-items-center">
     						<div class="text p-4 p-xl-5 text-center">
     							<p class="star mb-0"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>

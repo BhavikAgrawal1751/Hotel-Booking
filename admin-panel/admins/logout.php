@@ -5,4 +5,3 @@
     session_destroy();
     header("location: http://localhost/hotel-booking/admin-panel/admins/login-admins.php");
 
-?>
